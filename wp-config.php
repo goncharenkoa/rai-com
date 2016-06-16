@@ -26,7 +26,7 @@ define('DB_NAME', 'rai.com');
 define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', '56565454123');
+define('DB_PASSWORD', '123456');
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'localhost');
