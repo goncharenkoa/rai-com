@@ -1,0 +1,130 @@
+#velocity-page-wrapper, #velocity-page-wrapper * {
+	box-sizing: border-box;
+}
+
+/* Some themes go CRAZY with the clearfix. Let's reset that. */
+#velocity-page-wrapper *:after {
+	clear: none;
+}
+
+#velocity-page-wrapper h1,
+#velocity-page-wrapper h2,
+#velocity-page-wrapper h3,
+#velocity-page-wrapper h4 {
+	margin: 0 !important;
+}
+
+.row-wrap {
+	margin: 10px 0;
+}
+
+.item-area-item-wrap {
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+
+.item-area-wrap {
+	text-align: right;
+}
+
+#velocity-page-wrapper.vp-editing .item-area-wrap {
+	min-height: 40px;
+}
+
+#velocity-page-wrapper.vp-editing .item-area-item-wrap {
+	min-height: 40px;
+}
+
+.row-area-wrap {
+	min-height: 50px;
+}
+
+.item-area-wrap:before,
+.item-area-wrap:after {
+	content: "";
+	display: table;
+}
+
+.item-area-wrap:after {
+	clear: both;
+}
+
+.item-area-wrap {
+	zoom: 1;
+}
+
+.item-wrap {
+	margin: 10px;
+}
+
+.item-area-wrap-slug-default .item-wrap {
+	float: left;
+}
+
+.item-area-wrap-slug-default .item-area-item-wrap.item-count-1 .item-wrap {
+	width: 60%;
+	margin: 10px auto;
+	float: none;
+}
+
+.item-area-wrap-slug-default .item-area-item-wrap.item-count-2 .item-wrap {
+	width: 45%;
+	margin: 10px 2.5%;
+}
+
+.item-area-wrap-slug-default .item-area-item-wrap.item-count-3 .item-wrap {
+	width: 28.33333333333333%;
+	margin: 10px 2.5%;
+}
+
+.item-area-wrap-slug-default .item-area-item-wrap.item-count-4 .item-wrap {
+	width: 20%;
+	margin: 10px 2.5%;
+}
+
+.field-wrap .vp-noneditable, .field-wrap .vp-editable {
+	padding: 5px;
+}
+
+.field-wrap .vp-editable:hover {
+	/*border: 1px dashed #ccc;*/
+	/*padding: 4px;*/
+}
+
+.field-wrap .vp-editable:focus {
+	/*border: none;*/
+	/*padding: 5px;*/
+}
+
+.item-area-wrap-slug-25-percent {
+	float: left;
+	width: 25%;
+}
+
+.item-area-wrap-slug-33-percent {
+	float: left;
+	width: 33.33333333333%;
+}
+
+.item-area-wrap-slug-50-percent {
+	float: left;
+	width: 50%;
+}
+
+.item-area-wrap-slug-67-percent {
+	float: left;
+	width: 66.66666666666%;
+}
+
+.item-area-wrap-slug-100-percent {
+	float: left;
+	width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+	.item-area-wrap {
+		clear: both;
+		width: 100%;
+	}
+}

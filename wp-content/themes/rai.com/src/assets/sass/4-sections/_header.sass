@@ -1,0 +1,144 @@
+#header
+  position: relative
+  height: 940px
+  background: $dark-blue url("../img/header/bg.jpg") center 0 no-repeat
+
+  .top-bar
+    padding: 0
+    position: relative
+    z-index: 3
+    background:
+      color: rgba($blue,0.8)
+    height: 90px
+    .container
+      +clearfix
+      height: 100%
+    .top-bar-left,.top-bar-right
+      height: 100%
+    .dropdown.menu
+      font-family: gotham
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      +clearfix
+      height: 100%
+
+    ul
+      background: none
+      border: none
+      li
+        height: 100%
+        display: inline-block
+      a
+        padding: 0 18px
+        color: $white
+        height: 100%
+        line-height: 92px
+        position: relative
+        +transition()
+        &:hover,:focus,.active
+            color: lighten($blue, 40%)
+      li.is-dropdown-submenu-parent
+        a
+          padding: 0 30px 0 18px
+          &:after
+            background: url("../img/vector/bracket.svg")
+            width: 11px
+            height: 6px
+            border: none
+      li.active
+        background-color: #003c84
+        background-image: radial-gradient(circle 130px at 50.02% 156.64%, rgba(11, 135, 255, 0.8) 0%, transparent 100%)
+
+      .search
+        a
+          &:after
+            display: none
+          &:before
+            margin-top: 35px
+            content: ""
+            display: inline-block
+            background:
+              image: url("../img/vector/search-ico.svg")
+              size: 18px 18px
+            width: 18px
+            height: 18px
+            cursor: pointer
+        input
+          margin: 0 18px
+          border: none
+
+      .logo
+        margin: auto auto
+        width: 111px
+        height: 50px
+        display: block
+        margin-top: 20px;
+        a
+          width: 111px
+          height: 50px
+          +logo
+          background-size: 111px 50px
+          &:hover
+            opacity: 0.7
+      .submenu
+        top: 100%
+        left: 0%
+        background:
+          color: rgba($blue,0.8)
+        border-radius: 0px 0 5px 5px
+        padding: 18px 0
+        li
+          a
+            line-height: 26px
+  .quote
+    margin-top: 240px
+    width: 620px
+    margin-left: 90px
+    h1
+      border-left: 3px solid #29a2ff
+      padding-left: 34px
+      color: $white
+      font-family: "gotham"
+      font-size: 60px
+      font-weight: 900
+      text-transform: uppercase
+      line-height: 80px
+      margin-bottom: 50px
+      .sub-title
+        font-size: 26px
+        font-weight: 700
+        line-height: normal
+    span
+      color: #fefefe
+      font-size: 22px
+      font-weight: 400
+      line-height: 30px
+  .go-bot
+    position: absolute
+    bottom: 50px
+    background: url("../img/vector/go-bot.svg")
+    width: 60px
+    height: 31px
+    display: block
+    opacity: 0.5
+    margin: 0 auto
+    left: 0
+    right: 0
+    +transition()
+    &:hover
+      opacity: 1
+
+.external
+  #header
+    .quote
+      float: left
+      margin-top: 200px
+      h1
+        line-height: 60px
+    .visit-site
+      margin-top: 230px
+      +button()
+
+
+

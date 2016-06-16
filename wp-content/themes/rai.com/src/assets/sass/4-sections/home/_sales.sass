@@ -1,0 +1,83 @@
+#sales
+  background: #00152b url("../img/home/sales.jpg") 50% 0 no-repeat
+  height: 1739px
+  .container
+    max-width: 1200px
+    padding: 0
+    padding-top: 125px
+    h2
+      width: 350px
+      font-weight: 900
+      +sub-title()
+    a
+      color: #fff
+      margin-top: 30px
+      &:hover
+        text-decoration: underline
+    .description
+      width: 888px
+      color: #fefefe
+      font-size: 14px
+      margin-top: 45px
+      margin-bottom: 64px
+  .mosaicflow
+    .mosaic-item
+      position: relative
+      margin-top: 0 !important
+      float: left
+      &:hover
+        &:before
+          content: ""
+          background: rgba(#5d5558,0.8)
+          border: 12px #5d5558 solid
+          width: 100%
+          height: 100%
+          position: absolute
+          z-index: 1
+          top: 0
+          left: 0
+      .info
+        position: absolute
+        bottom: 10%
+        left: 10%
+        z-index: 2
+        width: 90%
+        h3
+          width: 350px
+          font-weight: 900
+          border-left: 3px solid #29a2ff
+          padding-left: 10px
+          color: #fff
+          font-size: 34px
+        .sub-title
+          font-size: 11px
+        .partners
+          margin-top: 20px
+          display: table
+          .img
+            padding-right: 20px
+            vertical-align: middle
+            display: table-cell
+    .item-1,.item-5,.item-8
+      width: 480px
+      height: 480px
+    .item-2,.item-7,.item-9,.item-11
+      width: 480px
+      height: 240px
+    .item-3,.item-4,.item-10
+      width: 240px
+      height: 240px
+    .item-6,.item-7
+      margin-top: -240px !important
+    .item-7
+      margin-left: 240px
+    .item-2,.item-7,.item-9,.item-11,.item-3,.item-4,.item-10,.item-6
+      .info
+        h3
+          font-size: 16px
+    .item-6,.item-9
+      .info
+        .partners
+          position: absolute
+          right: 0
+          bottom: 10px

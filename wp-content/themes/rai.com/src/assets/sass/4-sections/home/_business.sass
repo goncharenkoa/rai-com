@@ -1,0 +1,83 @@
+#business
+  position: relative
+  height: 860px
+  margin-top: -100px
+  .shadow
+    z-index: 1
+    position: absolute
+    width: 154px
+    height: 179px
+    box-shadow: 0 0 60px rgba(0, 2, 6, 0.2)
+  .container
+    padding: 0
+    height: 100%
+    position: relative
+    z-index: 2
+    max-width: 1200px
+    .shadow.left
+      left: 0px
+      top: 0px
+    .shadow.right
+      right: 0px
+      top: 0px
+    .shadow.bot-left
+      left: 0px
+      bottom: 0px
+    .shadow.bot-right
+      right: 0px
+      bottom: 0px
+    .wrap
+      padding: 106px 92px
+      background: #fff
+      position: relative
+      z-index: 2
+      height: 100%
+      .columns
+        margin: 0
+        padding: 0
+      .about
+        h2
+          width: 228px
+          color: #3e3e3e
+          border-left: 2px solid #29a2ff
+          padding-left: 27px
+          font-weight: 900
+        .description
+          color: #3e3e3e
+          font-size: 14px
+          font-weight: 400
+          line-height: 20px
+          margin-top: 27px
+          margin-bottom: 33px
+      .columns.specification
+          height: 250px
+          a
+            padding: 20px 20px
+            width: 100%
+            height: 100%
+            display: block
+            .title
+              margin-top: 30px
+              margin-bottom: 10px
+              color: #3e3e3e
+              font-family: gotham
+              font-size: 16px
+              font-weight: 700
+              text-transform: uppercase
+            .description
+              font-size: 13px
+              color: #a7a7a7
+          &:hover
+            background-color: #003c84
+            background-image: radial-gradient(circle 318px at 50.02% -52.18%, rgba(11, 135, 255, 0.8) 0%, transparent 100%)
+            +transition()
+            .title,.description
+              color: $white
+          a
+            .icon
+              display: block
+              width: 103px
+              height: 58px
+              background-size: 103px 58px
+
+

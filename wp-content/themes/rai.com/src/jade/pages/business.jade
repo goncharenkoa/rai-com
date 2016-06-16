@@ -1,0 +1,12 @@
+//- index.jade
+extends ../layouts/base.jade
+block setting
+	- var bodyClass = "external business"
+block header
+	include ../sections/external-header.jade
+block content
+	main.main(role="main")
+		include ../sections/business/two-columns
+		include ../sections/business/conventions
+		include ../sections/business/conventions_two
+		include ../sections/business/gallery

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY,CACX,OAAO,CAAE,IAAI,CAEb,mBAAO,CACN,UAAU,CAAE,KAAK,CACjB,qBAAC,CACA,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,OAAO,CAChB,WAAW,CAAE,IAAI",
+"sources": ["edit-admin.sass"],
+"names": [],
+"file": "edit-admin.css"
+}
