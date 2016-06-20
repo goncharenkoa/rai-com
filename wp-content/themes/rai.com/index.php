@@ -41,7 +41,7 @@
                             <?if(have_rows('business') ) :?>
                                 <?while ( have_rows('business') ) : the_row();?>
                                     <div class="large-3 columns specification">
-                                        <a href="<?the_sub_field("link")?>" onmouseover="$(this).find('.icon').css('background-image','url(<?=get_sub_field('icon-hover')['url']?>)');">
+                                        <a href="<?the_sub_field("link")?>" onmouseover="$(this).find('.icon').css('background-image','url(<?=get_sub_field('icon-hover')['url']?>)');" onmouseout="$(this).find('.icon').css('background-image','url(<?=get_sub_field('icon')['url']?>)');">
                                             <div class="icon" style="background: url('<?=get_sub_field("icon")["url"]?>');width:<?=get_sub_field("icon")["width"];?>px;height:<?=get_sub_field("icon")["height"]?>px"></div>
                                             <div class="title"><?=get_sub_field("title")?></div>
                                             <div class="description"><?the_sub_field("description")?></div>

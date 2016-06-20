@@ -733,7 +733,6 @@ input[type="button"] {
 
 .home #business {
   position: relative;
-  height: 860px;
   margin-top: -100px; }
   .home #business .shadow {
     z-index: 1;
@@ -782,7 +781,7 @@ input[type="button"] {
         margin-top: 27px;
         margin-bottom: 33px; }
       .home #business .container .wrap .columns.specification {
-        height: 250px;
+        height: 275px;
         overflow: hidden; }
         .home #business .container .wrap .columns.specification a {
           padding: 20px 20px;
@@ -816,7 +815,8 @@ input[type="button"] {
 
 .home #sales {
   background: #00152b url("../img/home/sales.jpg") 50% 0 no-repeat;
-  height: 1739px; }
+  height: 1739px;
+  margin-top: -100px; }
   .home #sales .container {
     max-width: 1200px;
     padding: 0;

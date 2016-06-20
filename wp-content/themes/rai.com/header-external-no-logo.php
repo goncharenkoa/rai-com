@@ -22,9 +22,9 @@
                 </ul>
             </div>
             <div class="top-bar-right">
-                <?wp_nav_menu(["location"=>"header_menu","container"=>"","menu_class" => "dropdown menu"])?>
+                <?wp_nav_menu(["location"=>"header_menu","container"=>"","menu_class" => "dropdown menu float-left"])?>
 
-                <ul data-dropdown-menu class="dropdown menu">
+                <ul data-dropdown-menu class="dropdown menu float-left">
                     <li><a href="#"><?=pll_current_language("name")?></a>
                         <ul class="language menu vertical">
                             <?php pll_the_languages(array('show_flags'=>0,'show_names'=>1,'hide_current' => 1)); ?>
