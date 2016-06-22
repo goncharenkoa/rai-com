@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Default title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/main.css" media="screen" title="no title" charset="utf-8">
@@ -26,7 +27,7 @@
                     <li class="logo"><a href="<?=pll_home_url(pll_current_language('slug'));?>"></a></li>
                 </ul>
             </div>
-            <div class="top-bar-right">
+            <div class="top-bar-right hide-for-small-only hide-for-medium-only">
                 <?wp_nav_menu(["location"=>"header_menu","container"=>"","menu_class" => "dropdown menu float-left"])?>
 
                 <ul data-dropdown-menu class="dropdown menu float-left">
@@ -51,8 +52,9 @@
 
         <div class="container">
             <div class="quote">
-                <h1><?the_sub_field("title")?></h1><span><?the_sub_field("sub_title")?></span>
-            </div><a href="#video" class="go-bot"></a>
+                <h1><?the_sub_field("title")?></h1><span><?the_sub_field("sub_title")?>
+                    <hr class="show-for-small-only"></span>
+            </div><a href="#video" class="go-bot hide-for-small-only"></a>
         </div>
 
 </div>

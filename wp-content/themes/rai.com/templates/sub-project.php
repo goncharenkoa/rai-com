@@ -5,14 +5,14 @@ Template Name: Sub-project
 ?>
 <?get_header("external")?>
 <main role="main" class="main">
-    <section id="two-columns">
+    <section id="two-columns" class="hide-for-small-only">
         <div class="container">
-            <div class="icon" style='background: url("<?=get_field("icon")["url"]?>")'></div>
+            <div class="icon hide-for-small-only" style='background: url("<?=get_field("icon")["url"]?>")'></div>
             <?if (have_rows("two_columns")) : the_row()?>
                 <h2><?the_title()?></h2>
                 <div class="row">
                     <?if (have_rows("column")) : while(have_rows("column")) : the_row()?>
-                        <div class="large-6 columns">
+                        <div class="medium-6 large-6 columns">
                             <div class="text">
                                 <?the_sub_field("text")?>
                             </div>
@@ -24,7 +24,19 @@ Template Name: Sub-project
     </section>
     <?if (get_field("screenshot")) : ?>
     <section id="preview">
-        <div class="browser"><img src="<?=get_field("screenshot")["url"]?>"></div>
+        <div class="preview-mob-text show-for-small-only">
+            <h2>Aenean aliquet quam mattis interdum congue.</h2>
+            <p>Non hai più limiti di tempo e spazio. E le possibilità sono infinite. Scopri come sfruttare tutti i vantaggi di PlayRai, anche in mobilità. Venenatis, vitae tincidunt enim posuere. Nulla blandit sagittis ante, quis elementum orci blandit sit amet. Duis volutpat porta ultricies. Mauris at tortor vel ipsum.</p>
+        </div>
+        <div class="browser">
+            <img src="<?=get_field("screenshot")["url"]?>">
+        </div>
+        <div class="preview-mob-text show-for-small-only">
+            <p>Non hai più limiti di tempo e spazio. E le possibilità sono infinite. Scopri come sfruttare tutti i vantaggi di PlayRai, anche in mobilità. Venenatis, vitae tincidunt enim posuere. Nulla blandit sagittis ante, quis elementum orci blandit sit amet. Duis volutpat porta ultricies. Mauris at tortor vel ipsum.</p>
+        </div>
+        <?if (get_field("link_to_project")) : ?>
+            <a href="<?the_field("link_to_project")?>" class="visit-site show-for-small-only">Vai al sito</a>
+        <?endif?>
     </section>
     <?endif?>
     <section id="two-columns">
@@ -33,7 +45,7 @@ Template Name: Sub-project
                 <h2><?the_title()?></h2>
                 <div class="row">
                     <?if (have_rows("column")) : while(have_rows("column")) : the_row()?>
-                        <div class="large-6 columns">
+                        <div class="medium-6 large-6 columns">
                             <div class="text">
                                 <?the_sub_field("text")?>
                             </div>
@@ -43,10 +55,12 @@ Template Name: Sub-project
             <?endif?>
         </div>
     </section>
-    <section class="icon-list">
+    <section class="icon-list clearfix">
         <?if (have_rows("special_pages",pll_current_language('slug'))) : while(have_rows("special_pages",pll_current_language('slug'))) : the_row()?>
         <a href="<?the_sub_field("url")?>" class="item">
-            <img src="<?=get_sub_field("icon")["url"]?>" alt="">
+            <div class="icon-wrapper">
+                <img src="<?=get_sub_field("icon")["url"]?>" alt="">
+            </div>
             <div><?the_sub_field("title")?></div>
         </a>
         <?endwhile;endif?>
