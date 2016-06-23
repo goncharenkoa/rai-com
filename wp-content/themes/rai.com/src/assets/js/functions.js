@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(document).foundation();
     var dropdown = new Foundation.DropdownMenu($(".dropdown"), {});
 
 });

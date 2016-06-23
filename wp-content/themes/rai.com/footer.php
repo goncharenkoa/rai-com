@@ -69,6 +69,10 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</div>
 <script type="text/javascript" src="<?=get_template_directory_uri()?>/js/functions.js"></script>
 <?wp_footer()?>
+
 </body>

@@ -2,14 +2,14 @@
 <main role="main" class="main">
     <div class="container">
         <div class="row">
-            <div class="large-4 columns">
+            <div class="large-4 columns hide-for-small-only">
                 <aside id="sidebar">
                     <h2 class="title">INFORMAZIONI GENERALI</h2>
                     <?wp_nav_menu(["location"=>"sidebar_menu","container"=>""])?>
 
                 </aside>
             </div>
-            <div class="large-8 columns">
+            <div class="small-12 medium-8 large-8 columns">
                 <div id="content">
                     <?php
                     // Start the loop.
