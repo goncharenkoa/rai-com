@@ -8,11 +8,11 @@ Template Name: Business
         <?if(have_rows("two_column")) : the_row()?>
             <section id="two-columns">
                 <div class="container">
-                    <div class="icon"></div>
+                    <div class="icon hide-for-small-only"></div>
                     <h2><?the_sub_field("title")?></h2>
                     <div class="row">
                         <?if (have_rows("column")) : while (have_rows("column")) : the_row()?>
-                            <div class="large-6 columns">
+                            <div class="medium-6 large-6 columns">
                                 <div class="text">
                                     <?the_sub_field("text")?>
                                 </div>

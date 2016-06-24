@@ -4,7 +4,7 @@
             <section id="video">
                 <div class="container">
                     <div class="row">
-                        <div class="large-6 columns">
+                        <div class="large-6 columns video-col-mob">
                             <div class="video-link"><a href="<?the_sub_field("video_url")?>" class="various fancybox.iframe go-to-video"></a></div>
                         </div>
                         <div class="large-6 columns">
@@ -20,7 +20,7 @@
             </section>
         <?endif;?>
         <?if(have_rows('types_of_business') ) : the_row();?>
-            <section id="business">
+            <section id="business" class="hidden-for-small-only">
                 <div class="container">
                     <div class="shadow left"></div>
                     <div class="shadow right"></div>
@@ -40,11 +40,11 @@
                         <div class="row">
                             <?if(have_rows('business') ) :?>
                                 <?while ( have_rows('business') ) : the_row();?>
-                                    <div class="large-3 columns specification">
+                                    <div class="small-6 large-3 columns specification">
                                         <a href="<?the_sub_field("link")?>" onmouseover="$(this).find('.icon').css('background-image','url(<?=get_sub_field('icon-hover')['url']?>)');" onmouseout="$(this).find('.icon').css('background-image','url(<?=get_sub_field('icon')['url']?>)');">
                                             <div class="icon" style="background: url('<?=get_sub_field("icon")["url"]?>');width:<?=get_sub_field("icon")["width"];?>px;height:<?=get_sub_field("icon")["height"]?>px"></div>
                                             <div class="title"><?=get_sub_field("title")?></div>
-                                            <div class="description"><?the_sub_field("description")?></div>
+                                            <div class="description hide-for-small-only"><?the_sub_field("description")?></div>
                                         </a>
                                     </div>
                                 <?endwhile;?>
@@ -55,7 +55,7 @@
             </section>
         <?endif;?>
         <?if(have_rows('international_sales') ) : the_row();?>
-            <section id="sales">
+            <section id="sales" class="hide-for-small-only hide-for-medium-only">
                 <div class="container">
                     <div class="about">
                         <h2 class="float-left"><?the_sub_field("title")?></h2><a href="<?the_sub_field("link_to_site")?>" class="float-right">Visita il sito <strong>International Sales</strong></a>
@@ -64,7 +64,7 @@
                             <?the_sub_field("description")?>
                         </div>
                     </div>
-                    <div class="mosaicflow">
+                    <div class="mosaicflow clearfix">
                         <?$postI = 0;if (have_rows("post")) : while(have_rows("post")) : the_row();$postI++?>
                             <a href="<?the_sub_field("url")?>" class="mosaic-item item-<?=$postI?>">
                                 <img  src="<?=get_sub_field("cover")?>">
@@ -94,7 +94,7 @@
             </section>
         <?endif;?>
         <?if(have_rows('italiano') ) : the_row();?>
-            <section id="italian">
+            <section id="italian" class="hide-for-small-only">
                 <div class="container">
                     <div class="about">
                         <h2><?=get_sub_field("page")->post_title?></h2>
@@ -106,7 +106,7 @@
                 </div>
             </section>
         <?endif;?>
-        <section id="shop" ng-app="raiEri">
+        <section id="shop" class="hide-for-small-only" ng-app="raiEri">
             <div class="container" ng-controller="LastItemsController" repeat-end="onEnd()">
                 <h2 class="float-left">rai eri<br> Libri e magazine</h2><a class="go-to float-right">Visita il sito RaiEri</a>
                 <div class="clearfix"></div>

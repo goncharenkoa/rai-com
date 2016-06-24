@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(document).foundation();
     var dropdown = new Foundation.DropdownMenu($(".dropdown"), {});
 
 });
@@ -12,23 +13,68 @@ $( document ).ready(function() {
 $('#news .owl-carousel').owlCarousel({
     items: 4,
     navigation: true,
-    margin: 20
+    margin: 20,
+    itemsMobile: [320,2]
 
 });
+if ( $(window).width() < 640 ) {
+    $('#staff .owl-carousel').owlCarousel({
+        items: 1,
+        navigation: true,
+        pagination: false
+
+    });
+}
 $('#statuts .owl-carousel').owlCarousel({
     items: 2,
     navigation: true,
-    margin: 20
+    margin: 20,
+    itemsMobile: [767,1],
+    itemsTablet: [768,2],
+    itemsDesktopSmall:	[1150,2]
 
 });
 $('#gallery .owl-carousel').owlCarousel({
     items: 1,
     navigation: true,
-    pagination: false
+    pagination: false,
+    responsive: true,
+    itemsTablet: [768,1],
+    itemsDesktopSmall:	[1150,1]
 
 });
+$('#history-mobile .history-mobile-carousel').owlCarousel({
+    items: 1,
+    navigation: true,
+    pagination: false,
+    responsive: true,
+    itemsTablet: [768,1],
+    itemsDesktopSmall:	[1150,1]
+
+});
+if ( $(window).width() < 640 ) {
+    $('#staff .group-slider').owlCarousel({
+        items: 1,
+        navigation: true,
+        pagination: true,
+        itemsTablet: [768,1]
+    });
+}
+if ( $(window).width() < 640 ) {
+    $('#rules .rules-carousel').owlCarousel({
+        items: 1,
+        navigation: true,
+        pagination: true,
+        itemsTablet: [768,1]
+    });
+}
+
 $(".go-bot").click(function(){
     $('body, html').animate({ scrollTop: $($(this).attr("href")).position().top }, 400);
+    return false;
+});
+$(".go-top").click(function(){
+    $('body, html').animate({ scrollTop: 0 }, 400);
     return false;
 });
 $(document).ready(function() {
