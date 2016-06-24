@@ -1,0 +1,68 @@
+#footer
+  padding-top: 50px
+  color: $white
+  font-size: 11px
+  height: 240px
+  background-color: #818181
+  .container
+    max-width: 1010px
+    .top
+      margin-bottom: 35px
+      padding-bottom: 25px
+      +clearfix
+      border-bottom: 2px solid rgba($white,0.3)
+      .social-links
+        position: relative
+        top: 7px
+        li
+          display: inline-block
+          margin: 0 10px
+          a
+            display: inline-block
+            +transition()
+            &:hover
+              opacity: 0.8
+        .facebook
+            a
+              width: 26px
+              height: 26px
+              background: url("../img/vector/ico-facebook.svg")
+        .twitter
+            a
+              width: 31px
+              height: 25px
+              background: url("../img/vector/ico-twitter.svg")
+        .youtube
+            a
+              width: 24px
+              height: 26px
+              background: url("../img/vector/ico-youtube.svg")
+      .subscribe
+        margin-left: 173px
+        input[type="text"]
+          margin: 0
+          border: none
+          display: inline-block
+          width: 220px
+          height: 40px
+          color: $white
+          font-size: 13px
+          font-weight: 400
+          background-color: rgba(255, 255, 255, 0.1)
+        input[type="submit"]
+          margin-left: 9px
+          +button()
+      .acreditation
+          +button()
+      
+    .logo
+      float: left
+      margin-right: 34px
+      width: 67px
+      height: 30px
+      +transition()
+      background: 
+        image: url("../img/vector/raicom-logo.svg")
+      &:hover
+        opacity: 0.8
+        

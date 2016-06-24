@@ -1,0 +1,12 @@
+//- index.jade
+extends ../layouts/base.jade
+block setting
+	- var bodyClass = "external page"
+block header
+	include ../sections/external-header.jade
+block content
+	main.main(role="main")
+		.container
+			.row
+				include ../sections/external/sidebar
+				include ../sections/external/content

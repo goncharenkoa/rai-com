@@ -1,0 +1,14 @@
+//- index.jade
+extends ../layouts/base.jade
+block setting
+	- var bodyClass = "external about_us"
+block header
+	include ../sections/external-header.jade
+block content
+	main.main(role="main")
+		include ../sections/about_us/two-columns
+		include ../sections/about_us/video
+		include ../sections/about_us/history
+		include ../sections/about_us/staff
+		include ../sections/about_us/statuts
+		include ../sections/about_us/rules

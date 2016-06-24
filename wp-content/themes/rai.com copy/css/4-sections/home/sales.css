@@ -1,0 +1,23 @@
+#sales {
+  background: #00152b url("../img/home/sales.jpg") 50% 0 no-repeat;
+  height: 1739px; }
+  #sales .container {
+    max-width: 1200px;
+    padding: 0;
+    padding-top: 125px; }
+    #sales .container h2 {
+      width: 350px;
+      font-weight: 900; }
+    #sales .container a {
+      color: #fff;
+      margin-top: 30px; }
+      #sales .container a:hover {
+        text-decoration: underline; }
+    #sales .container .description {
+      width: 888px;
+      color: #fefefe;
+      font-size: 14px;
+      margin-top: 45px;
+      margin-bottom: 64px; }
+
+/*# sourceMappingURL=../../maps/4-sections/home/sales.css.map */
