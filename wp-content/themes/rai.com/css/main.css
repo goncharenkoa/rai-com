@@ -1324,7 +1324,7 @@ input[type="button"] {
 
 .page #sidebar {
   padding-top: 63px;
-  width: 274px;
+  max-width: 274px;
   background: url("../img/external/sidebar.png") no-repeat; }
   .page #sidebar ul {
     list-style: none;
@@ -1777,7 +1777,9 @@ input[type="button"] {
         font-size: 11px;
         float: left !important; }
     #footer .contact-info p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      color: #fff;
+      font-size: 11px; }
   .title-bar {
     background-color: rgba(0, 34, 72, 0.6);
     border: none;
@@ -2300,7 +2302,9 @@ input[type="button"] {
         float: left !important; }
     #footer .contact-info p {
       margin-bottom: 0;
-      font-size: 21px; }
+      font-size: 21px;
+      padding: 0;
+      line-height: 33.6px; }
   .title-bar {
     background-color: rgba(0, 34, 72, 0.6);
     border: none;

@@ -2,7 +2,7 @@
 <main role="main" class="main">
     <div class="container">
         <div class="row">
-            <div class="large-4 columns hide-for-small-only">
+            <div class="medium-4 large-4 columns hide-for-small-only">
                 <aside id="sidebar">
                     <h2 class="title">INFORMAZIONI GENERALI</h2>
                     <?wp_nav_menu(["location"=>"sidebar_menu","container"=>""])?>
