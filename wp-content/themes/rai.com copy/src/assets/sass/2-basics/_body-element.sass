@@ -1,0 +1,61 @@
+body
+  background-color: white
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Open Sans', sans-serif
+  color: #666
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+.container
+  max-width: 1400px
+  padding: 0 30px
+  margin: 0 auto
+.row
+  max-width: 100%
+.owl-controls
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  font-size: 0
+  .owl-pagination
+    position: absolute
+    bottom: -50px
+    width: 100%
+    max-width: inherit
+    text-align: center
+    padding: 0 30px
+    .owl-page
+      vertical-align: middle
+      display: inline-block
+      width: 8px
+      height: 8px
+      opacity: 0.5
+      background-color: #818181
+      border-radius: 50%
+      margin: 0 7px
+    .active
+      opacity: 1
+      width: 8px
+      height: 8px
+      background: none
+      border: 2px solid #818181
+  .owl-buttons
+    position: absolute
+    top: 50%
+    bottom: 50%
+    width: 100%
+    max-width: inherit
+    div
+      width: 31px
+      height: 60px
+      position: absolute
+      opacity: 0.5
+    .owl-prev
+      background:
+        image: url(../img/vector/nav-control-prev.svg);
+      left: -100px
+    .owl-next
+      background:
+        image: url(../img/vector/nav-control-next.svg);
+      right: -100px
+
