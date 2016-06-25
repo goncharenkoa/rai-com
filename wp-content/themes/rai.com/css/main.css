@@ -532,7 +532,7 @@ input[type="button"] {
         #header .top-bar ul .submenu li a {
           line-height: 26px; }
   #header .quote {
-    padding-top: 240px;
+    padding-top: 10em;
     max-width: 620px;
     margin-left: 90px; }
     #header .quote h1 {
@@ -633,9 +633,9 @@ input[type="button"] {
             #footer .container .top .social-links li a:hover {
               opacity: 0.8; }
         #footer .container .top .social-links .facebook a {
-          width: 19px;
-          height: 37px;
-          background: url("../img/vector/icon-facebook.svg"); }
+          width: 26px;
+          height: 26px;
+          background: url("../img/vector/ico-facebook.svg"); }
         #footer .container .top .social-links .twitter a {
           width: 31px;
           height: 25px;
@@ -960,8 +960,6 @@ input[type="button"] {
         content: "";
         width: 175px;
         height: 262px;
-        background-color: #fff;
-        box-shadow: 0 24px 79px #949494;
         position: absolute;
         top: 30px;
         left: 0;
@@ -969,6 +967,8 @@ input[type="button"] {
         margin: 0 auto; }
       .home #shop .container .book:hover {
         background-color: rgba(129, 129, 129, 0.1); }
+      .home #shop .container .book img {
+        box-shadow: 0 24px 79px #949494; }
       .home #shop .container .book .author {
         margin-top: 20px;
         color: #818181;

@@ -103,7 +103,7 @@ function LastItemsController($scope,$http,$timeout) {
 
     $http({
         method: 'GET',
-        url: 'http://eri.balakshii.com/?books=last'
+        url: 'http://www.eri.rai.it/?books=last'
     }).then(function successCallback(response) {
         $scope.books = response.data;
         $timeout(function(){
@@ -121,16 +121,4 @@ function LastItemsController($scope,$http,$timeout) {
         // or server returns response with an error status.
     });
 
-    //$scope.books = [
-    //    {
-    //        name: 'Nexus S',
-    //        snippet: 'Fast just got faster with Nexus S.'
-    //    }, {
-    //        name: 'Motorola XOOM™ with Wi-Fi',
-    //        snippet: 'The Next, Next Generation tablet.'
-    //    }, {
-    //        name: 'MOTOROLA XOOM™',
-    //        snippet: 'The Next, Next Generation tablet.'
-    //    }
-    //];
 }
