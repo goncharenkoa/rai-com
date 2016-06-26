@@ -77,6 +77,10 @@ $(".go-top").click(function(){
     $('body, html').animate({ scrollTop: 0 }, 400);
     return false;
 });
+$(".is-dropdown-submenu:before").click(function(){
+    $('.is-dropdown-submenu').addClass('hide-submenu');
+});
+
 $(document).ready(function() {
     $(".various").fancybox({
         maxWidth	: 800,
