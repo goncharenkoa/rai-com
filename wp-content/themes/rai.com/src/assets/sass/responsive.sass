@@ -500,7 +500,8 @@
     font-size: 20px
     font-weight: 300
     .menu
-      width: 100%
+      width: 250px
+      margin-top: 60px;
   .search
     float: right
     position: static
@@ -542,8 +543,7 @@
       bottom: 0!important
       margin: 0;
       padding: 60px 14px 0 30px;
-      &:before
-        content: ''
+      .btn-back-to-menu
         width: 15px
         height: 16px
         background: url("../img/vector/ico-back.svg")
@@ -553,14 +553,18 @@
         left: 15px
   .hide-submenu
     display: none
-  .dropdown.menu>li.is-dropdown-submenu-parent>a:after
-      content: ''
+  .dropdown.menu>li.is-dropdown-submenu-parent
+    .mob-submenu-arrow
       border: none
       width: 8px
       height: 16px
       background: url("../img/vector/mobile-menu-arrow.svg")
       background-size: 8px 16px
-      top: 16px
+      top: 13px;
+      position: absolute;
+      right: 15px;
+    >a:after
+      content: normal
   .close-button
     border: none
     color: white
