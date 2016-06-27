@@ -25,14 +25,16 @@ Template Name: Sub-project
     <?if (get_field("screenshot")) : ?>
     <section id="preview">
         <div class="preview-mob-text show-for-small-only">
-            <h2>Aenean aliquet quam mattis interdum congue.</h2>
-            <p>Non hai più limiti di tempo e spazio. E le possibilità sono infinite. Scopri come sfruttare tutti i vantaggi di PlayRai, anche in mobilità. Venenatis, vitae tincidunt enim posuere. Nulla blandit sagittis ante, quis elementum orci blandit sit amet. Duis volutpat porta ultricies. Mauris at tortor vel ipsum.</p>
+            <h2><?the_field("mobile_title_before_screenshot")?></h2>
+            <p>
+                <?the_field("mobile_text_before_screenshot")?>
+            </p>
         </div>
         <div class="browser">
             <img src="<?=get_field("screenshot")["url"]?>">
         </div>
         <div class="preview-mob-text show-for-small-only">
-            <p>Non hai più limiti di tempo e spazio. E le possibilità sono infinite. Scopri come sfruttare tutti i vantaggi di PlayRai, anche in mobilità. Venenatis, vitae tincidunt enim posuere. Nulla blandit sagittis ante, quis elementum orci blandit sit amet. Duis volutpat porta ultricies. Mauris at tortor vel ipsum.</p>
+        <p><?the_field("mobile_text_after_screenshot")?></p>
         </div>
         <?if (get_field("link_to_project")) : ?>
             <a href="<?the_field("link_to_project")?>" class="visit-site show-for-small-only">Vai al sito</a>

@@ -33,20 +33,23 @@ Template Name: About-us
         <?if (get_field("history")) :?>
             <section id="history" class="hide-for-small-only" style='background: url("<?=get_field("history")["url"]?>") 50% 0 no-repeat'></section>
         <?endif?>
+        <?if (have_rows("history_mobile")):the_row()?>
         <section id="history-mobile" class="show-for-small-only">
-            <h2>Storia</h2>
-            <p>Non hai più limiti di tempo e spazio. E le possibilità sono infinite. Scopri come sfruttare tutti i vantaggi di PlayRai</p>
+            <h2><?the_sub_field("title")?></h2>
+            <p><?the_sub_field("content")?></p>
+            <?if(have_rows("slider")):?>
             <div class="history-mobile-carousel">
-                <div>
-                    <h3>2006</h3>
-                    <p>Donec dapibus lacinia ipsum et pellentesque. Suspendisse fermentum vestibulum eros vel porta...</p>
-                </div>
-                <div>
-                    <h3>Oggi</h3>
-                    <p>Donec dapibus lacinia ipsum et pellentesque. Suspendisse fermentum vestibulum eros vel porta. Cras interdum finibus porttitor...</p>
-                </div>
+                <?while(have_rows("slider")):the_row()?>
+                    <div>
+                        <h3><?the_sub_field("title")?></h3>
+                        <p><?the_sub_field("text")?></p>
+                    </div>
+                <?endwhile?>
+
             </div>
+            <?endif;?>
         </section>
+        <?endif?>
 
         <?if(have_rows("staff")) : the_row()?>
             <section id="staff">
