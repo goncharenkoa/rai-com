@@ -68,7 +68,7 @@
                     <li class="logo"><a href="#"></a></li>
                 </ul>
             </div>
-            <div class="top-bar-right hide-for-small-only hide-for-medium-only">
+            <div class="top-bar-right hide-for-small-only">
                 <?wp_nav_menu(["location"=>"header_menu","container"=>"","menu_class" => "dropdown menu float-left"])?>
 
                 <ul data-dropdown-menu class="dropdown menu float-left">

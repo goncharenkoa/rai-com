@@ -1,6 +1,7 @@
 #sidebar
   padding-top: 63px
-  width: 274px
+  padding-bottom: 50px
+  max-width: 274px
   background: url("../img/external/sidebar.png") no-repeat
   ul
     list-style: none
@@ -9,23 +10,37 @@
     li
       display: block
       a
+        font-family: 'Open Sans', sans-serif
         color: #3d3d3d
-        font-family: OpenSans
         font-size: 15px
         font-weight: 400
         line-height: 20px
+        padding: 8px 0
         &:hover
-          text-decoration: underline
+          text-decoration: none
     li.active
         a
           color: #29a2ff
           font-weight: 700
+    li.current-menu-item
+      a
+        text-decoration: none
+        color: #29a2ff
+        font-weight: 700
     .sub-menu
       margin-left: 20px
       li
         a
+          color: #3d3d3d
+          font-family: 'Open Sans', sans-serif
           font-size: 12px
+          font-weight: 400
   h2
     float: left
-    font-weight: 700
+    color: #3d3d3d
+    font-family: Gotham
     font-size: 18px
+    font-weight: 700
+    line-height: 20px
+    margin-bottom: 20px
+    text-transform: uppercase
