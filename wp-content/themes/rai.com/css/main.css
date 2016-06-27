@@ -530,7 +530,9 @@ input[type="button"] {
         border-radius: 0px 0 5px 5px;
         padding: 18px 0; }
         #header .top-bar ul .submenu li a {
-          line-height: 26px; }
+          line-height: 26px;
+          padding: 0 10px;
+          font-size: 11px; }
   #header ul.language.menu.vertical.submenu.is-dropdown-submenu.first-sub {
     left: auto;
     right: 0px; }
