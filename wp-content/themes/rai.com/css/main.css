@@ -530,7 +530,9 @@ input[type="button"] {
         border-radius: 0px 0 5px 5px;
         padding: 18px 0; }
         #header .top-bar ul .submenu li a {
-          line-height: 26px; }
+          line-height: 26px;
+          padding: 0 10px;
+          font-size: 11px; }
   #header ul.language.menu.vertical.submenu.is-dropdown-submenu.first-sub {
     left: auto;
     right: 0px; }
@@ -1839,7 +1841,8 @@ input[type="button"] {
     font-size: 20px;
     font-weight: 300; }
     .off-canvas .menu {
-      width: 100%; }
+      width: 250px;
+      margin-top: 60px; }
   .search {
     float: right;
     position: static;
@@ -1880,8 +1883,7 @@ input[type="button"] {
     bottom: 0 !important;
     margin: 0;
     padding: 60px 14px 0 30px; }
-    .is-dropdown-submenu:before {
-      content: '';
+    .is-dropdown-submenu .btn-back-to-menu {
       width: 15px;
       height: 16px;
       background: url("../img/vector/ico-back.svg");
@@ -1891,14 +1893,17 @@ input[type="button"] {
       left: 15px; }
   .hide-submenu {
     display: none; }
-  .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
-    content: '';
+  .dropdown.menu > li.is-dropdown-submenu-parent .mob-submenu-arrow {
     border: none;
     width: 8px;
     height: 16px;
     background: url("../img/vector/mobile-menu-arrow.svg");
     background-size: 8px 16px;
-    top: 16px; }
+    top: 13px;
+    position: absolute;
+    right: 15px; }
+  .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
+    content: normal; }
   .close-button {
     border: none;
     color: white;
