@@ -46,30 +46,8 @@
             <button class="close-button show-for-small-only" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
+            <?wp_nav_menu(["location"=>"mobile_menu","container"=>"","menu_class" => "mobile-menu menu float-left"])?>
 
-            <!-- Menu -->
-
-            <ul class="dropdown menu float-left" role="menubar">
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254" role="menuitem"><a href="#" tabindex="0">Home</a></li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255" role="menuitem"><a href="#">Corporate</a></li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-256 is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="Aree di Business"><a href="#">Aree di Business</a>
-                    <span class="mob-submenu-arrow"></span>
-                    <ul class="sub-menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
-                        <span class="btn-back-to-menu"></span>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257 is-submenu-item is-dropdown-submenu-item" role="menuitem"><a href="#">One</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258 is-submenu-item is-dropdown-submenu-item" role="menuitem"><a href="#">Two</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-259 is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="Progetti speciali"><a href="#">Progetti speciali</a>
-                    <span class="mob-submenu-arrow"></span>
-                    <ul class="sub-menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
-                        <span class="btn-back-to-menu"></span>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260 is-submenu-item is-dropdown-submenu-item" role="menuitem"><a href="#">One</a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261 is-submenu-item is-dropdown-submenu-item" role="menuitem"><a href="#">Two</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-262" role="menuitem"><a href="#">Contatti</a></li>
-            </ul>
 
         </div>
 

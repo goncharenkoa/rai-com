@@ -5,7 +5,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="large-6 columns video-col-mob">
-                            <div class="video-link"><a href="<?the_sub_field("video_url")?>" class="various fancybox.iframe go-to-video"></a></div>
+                            <?if(get_sub_field("video_item")):?>
+                            <div class="video-link">
+                                <div  class="go-to-video play"></div>
+                                <video width="100%" height="100%" id="videoBox" poster="<?the_sub_field("preload_img")?>">
+                                    <source src="<?the_sub_field("video_item")?>">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <?endif;?> 
+
                         </div>
                         <div class="large-6 columns">
                             <div class="video-description">
