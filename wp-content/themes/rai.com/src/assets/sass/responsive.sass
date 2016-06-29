@@ -286,13 +286,14 @@
         height: auto
         background-size: cover
         position: relative
-        padding-top: 200px
+        //padding-top: 200px
         .go-to-video
           position: absolute
           left: 0
           right: 0
-          top: 50%
-          transform: translateY(-50%)
+          top: 0
+          bottom: 0
+          margin: auto
       .video-description
         padding: 45px 5px;
         h2
@@ -461,7 +462,7 @@
     background-color: rgba(0, 34, 72, 0.6);
     border: none
     height: 60px
-    position: fixed
+    position: absolute
     top: 0
     left: 0
     right: 0
@@ -532,7 +533,8 @@
     margin-top: 60px
     li
       padding: 0 15px
-  .is-dropdown-submenu
+  .mobile-menu .sub-menu
+      z-index: 999;
       background-color: #002248;
       list-style: none
       border: none
@@ -551,9 +553,12 @@
         position: absolute
         top: 20px
         left: 15px
-  .hide-submenu
+  .mobile-menu li
+    position: relative
+  .mobile-menu .sub-menu
     display: none
-  .dropdown.menu>li.is-dropdown-submenu-parent
+    list-style: none
+  .menu>li.menu-item-has-children
     .mob-submenu-arrow
       border: none
       width: 8px

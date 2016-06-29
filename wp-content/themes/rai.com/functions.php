@@ -6,6 +6,7 @@ if ( function_exists( 'add_image_size' ) ) {
 register_nav_menus( array(
     'sidebar_menu' => 'Sidebar Menu',
     'header_menu' => 'Header Menu',
+    'mobile_menu' => 'Mobile Menu'
 ) );
 
 if( function_exists('acf_add_options_page') ) {

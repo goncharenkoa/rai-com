@@ -125,4 +125,39 @@ function LastItemsController($scope,$http,$timeout) {
         // or server returns response with an error status.
     });
 
+    //MOBILE SUB MENU MOBULE
+
+    $('.btn-back-to-menu').click(function(){
+        $(this).parent().css("display","none");
+    });
+    $(".mobile-menu .menu-item-has-children").each(function(indx,element){
+        $(element).prepend('<span class="mob-submenu-arrow">');
+        if (($(".mobile-menu .menu-item-has-children").length -1) == indx ){
+            $('.mob-submenu-arrow').click(function(){
+                $(this).parent().find(".sub-menu").css("display","block");
+            });
+        }
+    });
+    $(".mobile-menu .menu-item-has-children .sub-menu").each(function(indx,element){
+        $(element).prepend('<span class="btn-back-to-menu"></span>');
+        if (($(".mobile-menu .sub-menu").length -1) == indx ){
+            $('.btn-back-to-menu').click(function(){
+                $(this).parent().css("display","none");
+            });
+        }
+    });
+    $(".go-to-video").click(function(){
+        if ($(this).hasClass("play")){
+            $("#videoBox")[0].play();
+            $(this).removeClass("play").addClass("pause");
+            return false
+        }
+        if ($(this).hasClass("pause")){
+            $("#videoBox")[0].pause();
+            $(this).removeClass("pause").addClass("play");
+            return false
+        }
+    });
+
+
 }

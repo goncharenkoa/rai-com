@@ -4,21 +4,31 @@
   height: 480px
 
   .video-link
-    padding-top: 157px
     width: 100%
     height: 480px
-    background: #011735 url("../img/home/player.jpg")no-repeat
     position: relative
     .go-to-video
+
+      display: block
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        top: 0
+
         color: #fff
-        background: url("../img/vector/icon-play.svg")
         width: 90px
         height: 62px
         display: block
-        margin: 0 auto 0 auto
+        margin: auto
+        z-index: 9999
         +transition()
         &:hover
           opacity: 0.8
+  .go-to-video.play
+    background: url("../img/vector/icon-play.svg")
+  .go-to-video.pause
+    background: url("../img/vector/pause.png")
   .video-description
     padding-left: 70px
     padding-top: 86px
