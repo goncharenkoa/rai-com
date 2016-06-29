@@ -708,6 +708,7 @@ input[type="button"] {
     height: 480px;
     position: relative; }
     .home #video .video-link .go-to-video {
+      display: block;
       position: absolute;
       left: 0;
       right: 0;
@@ -1931,7 +1932,17 @@ input[type="button"] {
     width: 100%; }
   .is-open-left {
     -webkit-transform: translateX(250px);
-    transform: translateX(250px); } }
+    transform: translateX(250px); }
+  .is-dropdown-submenu {
+    right: auto;
+    left: 5px !important;
+    top: 100%;
+    background-color: rgba(0, 60, 132, 0.8);
+    border-radius: 5px;
+    padding: 18px 0;
+    border: none; }
+    .is-dropdown-submenu input {
+      font-weight: bold; } }
 
 @media screen and (max-width: 640px) and (max-width: 640px) and (orientation: landscape) {
   .page-template-businnes #header {
